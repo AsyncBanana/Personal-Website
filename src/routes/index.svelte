@@ -1,16 +1,52 @@
 <script>
 	//import Saos from 'saos';
+	import Skill from '../components/skill.svelte';
+	import jsLogo from '../assets/js_logo.svg'
+	import reactLogo from '../assets/react_logo.svg'
+	import svelteLogo from '../assets/svelte_logo.svg'
 </script>
 
 <svelte:head>
-	<title>AsyncBanana | Build the future</title>
+	<!-- Primary Meta Tags -->
+	<title>AsyncBanana - Build the Future</title>
+	<meta name="title" content="AsyncBanana - Build the Future" />
+	<meta
+		name="description"
+		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://asyncbanana.dev/" />
+	<meta property="og:title" content="AsyncBanana - Build the Future" />
+	<meta
+		property="og:description"
+		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
+	/>
+	<!--<meta
+		property="og:image"
+		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+	/>-->
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://asyncbanana.dev/" />
+	<meta property="twitter:title" content="AsyncBanana - Build the Future" />
+	<meta
+		property="twitter:description"
+		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
+	/>
+	<!--<meta
+		property="twitter:image"
+		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+	/>-->
 </svelte:head>
 <div class="relative h-screen">
 	<h1 class="fadeInTop fadeIn md:text-9xl text-7xl mt-20 m-auto w-min">Build</h1>
 	<h1 class="fadeInRight fadeIn md:text-9xl text-7xl m-auto w-min">the</h1>
 	<h1 class="fadeInEnd fadeIn text-7xl md:text-9xl m-auto w-min">Future</h1>
 	<div class="m-auto w-min">
-		<a href="#intro">
+		<a href="#intro" alt="Go to intro">
 			<svg
 				class="animate-bounce w-12 h-24 mt-20 text-amber-900"
 				fill="none"
@@ -35,9 +71,13 @@
 	</p>
 	<p>I like Go, JavaScript, new, shiny frameworks, and bananas :)</p>
 	<p>🚧This is currently in progress🚧</p>
-	<div class="grid md:grid-rows-3 grid-rows-2" />
 </div>
-
+<h1 class="text-center" id="skills">Skills</h1>
+<div class="grid md:grid-cols-10 grid-cols-5 gap-5 m-auto w-3/5">
+	<Skill name="JavaScript" imageUrl={jsLogo}/>
+	<Skill name="React" imageUrl={reactLogo}/>
+	<Skill name="Svelte" imageUrl={svelteLogo}/>
+</div>
 <style>
 	@keyframes fade-in-top {
 		0% {

@@ -3,7 +3,7 @@
 	<input class="menu-btn" type="checkbox" id="menu-btn" />
 	<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
 	<ul class="menu">
-		<li><a href="/About">About</a></li>
+		<li><a href="#Skills">Skills</a></li>
 	</ul>
 </nav>
 

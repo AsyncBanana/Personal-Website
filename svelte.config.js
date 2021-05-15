@@ -16,7 +16,7 @@ const config = {
 			fallback: null
 		}),
 		files: {
-			//assets: "src/static"
+			assets: "static"
 		},
 		vite: {
 			plugins: []
