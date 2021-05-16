@@ -47,6 +47,8 @@
 		property="twitter:image"
 		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
 	/>-->
+	<!-- Other -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; frame-ancestors: none;">
 </svelte:head>
 <div class="relative h-screen">
 	<h1 class="fadeInTop fadeIn md:text-9xl text-7xl mt-20 m-auto w-min">Build</h1>
@@ -80,7 +82,7 @@
 	<p>🚧This is currently in progress🚧</p>
 </div>
 <h1 class="text-center" id="Skills">Skills</h1>
-<div class="grid md:grid-cols-10 grid-cols-3 gap-5 m-auto w-3/5">
+<div class="grid md:grid-cols-6 lg:grid-cols-8 grid-cols-3 gap-5 m-auto w-3/5">
 	<Skill name="JavaScript" imageUrl={jsLogo} />
 	<Skill name="React" imageUrl={reactLogo} />
 	<Skill name="Svelte" imageUrl={svelteLogo} />
