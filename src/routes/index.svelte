@@ -1,9 +1,16 @@
 <script>
 	//import Saos from 'saos';
 	import Skill from '../components/skill.svelte';
-	import jsLogo from '../assets/js_logo.svg'
-	import reactLogo from '../assets/react_logo.svg'
-	import svelteLogo from '../assets/svelte_logo.svg'
+	import jsLogo from '../assets/js_logo.svg';
+	import reactLogo from '../assets/react_logo.svg';
+	import svelteLogo from '../assets/svelte_logo.svg';
+	import htmlLogo from '../assets/HTML5_logo.svg';
+	import cssLogo from '../assets/CSS_logo.svg';
+	import goLogo from '../assets/go_logo.png'
+	import tailwindLogo from '../assets/tailwind_logo.svg'
+	import materializeLogo from '../assets/materialize_logo.svg'
+	import typescriptLogo from '../assets/typescript_logo.svg'
+	import pythonLogo from '../assets/python_logo.svg'
 </script>
 
 <svelte:head>
@@ -73,11 +80,19 @@
 	<p>🚧This is currently in progress🚧</p>
 </div>
 <h1 class="text-center" id="skills">Skills</h1>
-<div class="grid md:grid-cols-10 grid-cols-5 gap-5 m-auto w-3/5">
-	<Skill name="JavaScript" imageUrl={jsLogo}/>
-	<Skill name="React" imageUrl={reactLogo}/>
-	<Skill name="Svelte" imageUrl={svelteLogo}/>
+<div class="grid md:grid-cols-10 grid-cols-3 gap-5 m-auto w-3/5">
+	<Skill name="JavaScript" imageUrl={jsLogo} />
+	<Skill name="React" imageUrl={reactLogo} />
+	<Skill name="Svelte" imageUrl={svelteLogo} />
+	<Skill name="HTML 5" imageUrl={htmlLogo} />
+	<Skill name="CSS 3" imageUrl={cssLogo} />
+	<Skill name="Go" imageUrl={goLogo}/>
+	<Skill name="Tailwind CSS" imageUrl={tailwindLogo}/>
+	<Skill name="Materialize CSS" imageUrl={materializeLogo}/>
+	<Skill name="Python" imageUrl={pythonLogo}/>
+	<Skill name="TypeScript" imageUrl={typescriptLogo}/>
 </div>
+
 <style>
 	@keyframes fade-in-top {
 		0% {
