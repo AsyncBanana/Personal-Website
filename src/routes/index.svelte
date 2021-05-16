@@ -53,7 +53,7 @@
 	<h1 class="fadeInRight fadeIn md:text-9xl text-7xl m-auto w-min">the</h1>
 	<h1 class="fadeInEnd fadeIn text-7xl md:text-9xl m-auto w-min">Future</h1>
 	<div class="m-auto w-min">
-		<a href="#intro" alt="Go to intro">
+		<a href="#Intro" alt="Go to intro" aria-label="Go to intro">
 			<svg
 				class="animate-bounce w-12 h-24 mt-20 text-amber-900"
 				fill="none"
@@ -68,7 +68,7 @@
 		</a>
 	</div>
 </div>
-<h1 class="text-center" id="intro">Hello, I am AsyncBanana</h1>
+<h1 class="text-center" id="Intro">Hello, I am AsyncBanana</h1>
 <h2 class="text-center text-gray-500">A student and multi platform developer</h2>
 <br />
 <div class="m-auto w-3/5 text-center">
@@ -79,7 +79,7 @@
 	<p>I like Go, JavaScript, new, shiny frameworks, and bananas :)</p>
 	<p>🚧This is currently in progress🚧</p>
 </div>
-<h1 class="text-center" id="skills">Skills</h1>
+<h1 class="text-center" id="Skills">Skills</h1>
 <div class="grid md:grid-cols-10 grid-cols-3 gap-5 m-auto w-3/5">
 	<Skill name="JavaScript" imageUrl={jsLogo} />
 	<Skill name="React" imageUrl={reactLogo} />
