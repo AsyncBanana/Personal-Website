@@ -32,13 +32,13 @@
 		padding: 20px 20px;
 		border-right: 1px solid rgb(61, 59, 59);
 		text-decoration: none;
+		margin: 2px;
 	}
 
 	li a:hover,
 	.menu-btn:hover {
 		background-color: rgb(61, 59, 59);
 	}
-
 	.logo {
 		display: block;
 		float: left;
@@ -46,6 +46,8 @@
 		padding: 10px 20px;
 		text-decoration: none;
 		font-weight: 700;
+		margin-top: auto;
+		margin-bottom: auto;
 	}
 
 	/* menu */
