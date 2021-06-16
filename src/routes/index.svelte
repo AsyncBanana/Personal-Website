@@ -96,7 +96,7 @@
 		*Note: This is only a subset of all of the libraries, languages, and frameworks that I have
 		knowledge of. Contact me for more info
 	</p>
-	<h1 class="text-center">Projects</h1>
+	<h1 class="text-center" id="Projects">Projects</h1>
 	<div class="grid lg:grid-cols-2">
 		<Project Name="This portfolio" Description="A fun project" Url="Portfolio" />
 		<Project
