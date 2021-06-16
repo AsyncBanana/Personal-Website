@@ -26,6 +26,8 @@
 		list-style: none;
 		overflow: hidden;
 		background-color: rgb(61, 59, 59);
+		display: flex;
+		flex-direction: column;
 	}
 
 	li a {
@@ -133,6 +135,9 @@
 		}
 		li a {
 			padding: 20px 30px;
+		}
+		ul {
+			flex-direction: row;
 		}
 		.menu {
 			clear: none;
