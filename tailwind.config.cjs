@@ -1,5 +1,5 @@
 module.exports = {
-	purge: ['./src/routes/*.svelte', './src/index.html', './src/components/*.svelte'],
+	purge: ['./src/routes/*.svelte', './src/index.html', './src/components/*.svelte', './src/routes/Projects/*.svelte'],
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {}
@@ -8,7 +8,13 @@ module.exports = {
 		extend: {}
 	},
 	plugins: [
-		require('@tailwindcss/aspect-ratio')
+		require('@tailwindcss/aspect-ratio'),
+		require('daisyui')
 	],
-	mode: 'jit'
+	mode: 'jit',
+	daisyui: {
+		themes: [
+		  'dark',
+		],
+	  },
 };

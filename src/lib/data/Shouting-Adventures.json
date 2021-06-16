@@ -1,0 +1,19 @@
+{
+    "Name": "Math Games",
+    "Description": "One of my first scripted Roblox games that was based off of Shouting Simulator, another Roblox game. It was not that popular, and I have stopped development on it.",
+    "Link": "https://web.roblox.com/games/4830298187/Math-Games",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2019"
+        },
+        {
+            "Header": "Language",
+            "Value": "Lua"
+        },
+        {
+            "Header": "Built on",
+            "Value": "Roblox"
+        }
+    ]
+}

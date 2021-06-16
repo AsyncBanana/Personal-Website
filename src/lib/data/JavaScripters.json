@@ -1,0 +1,15 @@
+{
+    "Name": "JavaScripters",
+    "Description": "A welcoming community based on JavaScript and it's various dialects, like TypeScript or JSX. JavaScripters has over 1k members, and is still growing.",
+    "Url": "https://javascripters.vercel.app/",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2020"
+        },
+        {
+            "Header": "Members",
+            "Value": "1k+"
+        }
+    ]
+}

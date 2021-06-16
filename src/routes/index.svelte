@@ -1,55 +1,36 @@
 <script>
-	//import Saos from 'saos';
+	import Project from '../components/project.svelte';
 	import Skill from '../components/skill.svelte';
 	import jsLogo from '../assets/js_logo.svg';
 	import reactLogo from '../assets/react_logo.svg';
 	import svelteLogo from '../assets/svelte_logo.svg';
 	import htmlLogo from '../assets/HTML5_logo.svg';
 	import cssLogo from '../assets/CSS_logo.svg';
-	import goLogo from '../assets/go_logo.png'
-	import tailwindLogo from '../assets/tailwind_logo.svg'
-	import materializeLogo from '../assets/materialize_logo.svg'
-	import typescriptLogo from '../assets/typescript_logo.svg'
-	import pythonLogo from '../assets/python_logo.svg'
+	import goLogo from '../assets/go_logo.png';
+	import tailwindLogo from '../assets/tailwind_logo.svg';
+	import materializeLogo from '../assets/materialize_logo.svg';
+	import typescriptLogo from '../assets/typescript_logo.svg';
+	import pythonLogo from '../assets/python_logo.svg';
+	import flutterLogo from '../assets/flutter_logo.svg';
+	import dartLogo from '../assets/dart_logo.svg';
+	import csharpLogo from '../assets/csharp_logo.svg';
+	import gitLogo from '../assets/git_logo.svg';
+	import linuxLogo from '../assets/linux_logo.svg';
+	import dockerLogo from '../assets/docker_logo.svg';
+	import bashLogo from '../assets/bash_logo.svg';
+	import gcpLogo from '../assets/gcp_logo.svg';
+	import nextjsLogo from '../assets/nextjs_logo.svg';
+	import gatsbyLogo from '../assets/gatsby_logo.svg';
+	import tensorflowLogo from '../assets/tensorflow_logo.svg';
+	import amplifyLogo from '../assets/amplify_logo.svg';
+	import firebaseLogo from '../assets/firebase_logo.svg';
+	import herokuLogo from '../assets/heroku_logo.svg';
+	import redisLogo from '../assets/redis_logo.svg';
+	import figmaLogo from '../assets/figma_logo.svg';
+	import nodejsLogo from '../assets/nodejs_logo.svg';
+	import mathgameslogo from '../assets/mathgames.png';
 </script>
 
-<svelte:head>
-	<!-- Primary Meta Tags -->
-	<title>AsyncBanana - Build the Future</title>
-	<meta name="title" content="AsyncBanana - Build the Future" />
-	<meta
-		name="description"
-		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
-	/>
-
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://asyncbanana.dev/" />
-	<meta property="og:title" content="AsyncBanana - Build the Future" />
-	<meta
-		property="og:description"
-		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
-	/>
-	<!--<meta
-		property="og:image"
-		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-	/>-->
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://asyncbanana.dev/" />
-	<meta property="twitter:title" content="AsyncBanana - Build the Future" />
-	<meta
-		property="twitter:description"
-		content="AsyncBanana is a multi-platform developer and student who does web dev, desktop dev, data science, and more"
-	/>
-	<!--<meta
-		property="twitter:image"
-		content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
-	/>-->
-	<!-- Other -->
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline';">
-</svelte:head>
 <div class="relative h-screen">
 	<h1 class="fadeInTop fadeIn md:text-9xl text-7xl mt-20 m-auto w-min">Build</h1>
 	<h1 class="fadeInRight fadeIn md:text-9xl text-7xl m-auto w-min">the</h1>
@@ -70,29 +51,76 @@
 		</a>
 	</div>
 </div>
-<h1 class="text-center" id="Intro">Hello, I am AsyncBanana</h1>
-<h2 class="text-center text-gray-500">A student and multi platform developer</h2>
-<br />
-<div class="m-auto w-3/5 text-center">
+<div class="m-auto w-3/5">
+	<h1 class="text-center" id="Intro">Hello, I am AsyncBanana</h1>
+	<h2 class="text-center text-gray-500">A student and multi platform developer</h2>
+	<br />
 	<p>
-		I am a developer that does web dev, desktop development, some mobile development, a bit of data
-		science, and more! I also write about programming stuff
+		&#8195;I am a developer that does web dev, desktop development, some mobile development, a bit
+		of data science, and more! I also write about programming stuff. This is my
+		portfolio/resume/personal website built with TypeScript, SvelteKit, and TailwindCSS
 	</p>
 	<p>I like Go, JavaScript, new, shiny frameworks, and bananas :)</p>
-	<p>🚧This is currently in progress🚧</p>
-</div>
-<h1 class="text-center" id="Skills">Skills</h1>
-<div class="grid md:grid-cols-6 lg:grid-cols-8 grid-cols-3 gap-5 m-auto w-3/5">
-	<Skill name="JavaScript" imageUrl={jsLogo} />
-	<Skill name="React" imageUrl={reactLogo} />
-	<Skill name="Svelte" imageUrl={svelteLogo} />
-	<Skill name="HTML 5" imageUrl={htmlLogo} />
-	<Skill name="CSS 3" imageUrl={cssLogo} />
-	<Skill name="Go" imageUrl={goLogo}/>
-	<Skill name="Tailwind CSS" imageUrl={tailwindLogo}/>
-	<Skill name="Materialize CSS" imageUrl={materializeLogo}/>
-	<Skill name="Python" imageUrl={pythonLogo}/>
-	<Skill name="TypeScript" imageUrl={typescriptLogo}/>
+	<p class="text-center">🚧This is currently in progress🚧</p>
+	<h1 class="text-center" id="Skills">Skills</h1>
+	<div class="grid md:grid-cols-6 lg:grid-cols-8 grid-cols-3 gap-5">
+		<Skill name="JavaScript" imageUrl={jsLogo} />
+		<Skill name="Node.js" imageUrl={nodejsLogo} />
+		<Skill name="React & React Native" imageUrl={reactLogo} />
+		<Skill name="Next.js" imageUrl={nextjsLogo} />
+		<Skill name="Gatsby" imageUrl={gatsbyLogo} />
+		<Skill name="Svelte" imageUrl={svelteLogo} />
+		<Skill name="HTML 5" imageUrl={htmlLogo} />
+		<Skill name="CSS 3" imageUrl={cssLogo} />
+		<Skill name="Go" imageUrl={goLogo} />
+		<Skill name="Tailwind CSS" imageUrl={tailwindLogo} />
+		<Skill name="Materialize CSS" imageUrl={materializeLogo} />
+		<Skill name="Python" imageUrl={pythonLogo} />
+		<Skill name="TypeScript" imageUrl={typescriptLogo} />
+		<Skill name="C#" imageUrl={csharpLogo} />
+		<Skill name="Dart" imageUrl={dartLogo} />
+		<Skill name="Flutter" imageUrl={flutterLogo} />
+		<Skill name="Git" imageUrl={gitLogo} />
+		<Skill name="Linux" imageUrl={linuxLogo} />
+		<Skill name="Bash" imageUrl={bashLogo} />
+		<Skill name="Docker" imageUrl={dockerLogo} />
+		<Skill name="Google Cloud" imageUrl={gcpLogo} />
+		<Skill name="AWS Amplify" imageUrl={amplifyLogo} />
+		<Skill name="Firebase" imageUrl={firebaseLogo} />
+		<Skill name="Heroku" imageUrl={herokuLogo} />
+		<Skill name="Tensorflow" imageUrl={tensorflowLogo} />
+		<Skill name="Redis" imageUrl={redisLogo} />
+		<Skill name="Figma" imageUrl={figmaLogo} />
+	</div>
+	<p>
+		*Note: This is only a subset of all of the libraries, languages, and frameworks that I have
+		knowledge of. Contact me for more info
+	</p>
+	<h1 class="text-center">Projects</h1>
+	<div class="grid lg:grid-cols-2">
+		<Project Name="This portfolio" Description="A fun project" Url="Portfolio" />
+		<Project
+			Name="Smoothie Stand"
+			Description="An advanced Discord economy bot"
+			Url="Smoothie-Stand"
+		/>
+		<Project
+			Name="GuildScript"
+			Description="A Discord bot for building communities"
+			Url="GuildScript"
+		/>
+		<Project
+			Name="Math Games"
+			Description="A popular, unique Roblox game to help practice math in a fun way"
+			Url="Math-Games"
+			ImageUrl={mathgameslogo}
+		/>
+		<Project
+			Name="Shouting Adventures"
+			Description="A Roblox game based off of Shouting Simulator"
+			Url="Shouting-Adventures"
+		/>
+	</div>
 </div>
 
 <style>

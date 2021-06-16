@@ -1,0 +1,19 @@
+{
+    "Name": "Smoothie Stand",
+    "Description": "An advanced Discord economy bot. Smoothie Stand revolves around managing a smoothie stand and selling smoothies. It is in 75+ servers. I built it using Discord.js hosted locally with Cloud Firestore and Redis as databases.",
+    "Url": "https://smoothiestand.web.app/",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2021"
+        },
+        {
+            "Header": "Language",
+            "Value": "JavaScript"
+        },
+        {
+            "Header": "Server Count",
+            "Value": "75+"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "Name": "Portfolio Website",
+    "Description": "The portfolio website you are looking at right now. I built it using SvelteKit, Tailwind, and DaisyUI.",
+    "Link": "https://github.com/AsyncBanana/Personal-Website",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2021"
+        },
+        {
+            "Header": "Language",
+            "Value": "JavaScript"
+        },
+        {
+            "Header": "Framework",
+            "Value": "SvelteKit"
+        }
+    ]
+}

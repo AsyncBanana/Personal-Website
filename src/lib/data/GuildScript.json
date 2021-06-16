@@ -1,0 +1,18 @@
+{
+    "Name": "GuildScript",
+    "Description": "A discord bot for building communities. Supports many common utility functions, like welcome messages and command roles, as well as more unique functions, like built in server suggestion support. It was the first Discord bot I had built, using Discord.js, Cloud Firestore, and later Redis. I am currently not continuing to update it.",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2020"
+        },
+        {
+            "Header": "Language",
+            "Value": "JavaScript"
+        },
+        {
+            "Header": "Server Count",
+            "Value": "30+"
+        }
+    ]
+}
