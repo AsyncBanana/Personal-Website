@@ -13,7 +13,7 @@
 <script>
 	export let Name = '';
 	export let Description = 'A project';
-	export let Link = 'https://github.com/asyncbanana';
+	export let Url = 'https://github.com/asyncbanana';
 	export let Stats = [];
 </script>
 
@@ -37,6 +37,6 @@
 				{/each}
 			</div>
 		</div>
-		<a href={Link} class="btn">Visit project</a>
+		<a href={Url} class="btn">Visit project</a>
 	</div>
 </div>

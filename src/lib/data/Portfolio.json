@@ -1,7 +1,7 @@
 {
     "Name": "Portfolio Website",
     "Description": "The portfolio website you are looking at right now. I built it using SvelteKit, Tailwind, and DaisyUI, and it is hosted on Cloudflare Pages",
-    "Link": "https://github.com/AsyncBanana/Personal-Website",
+    "Url": "https://github.com/AsyncBanana/Personal-Website",
     "Stats": [
         {
             "Header": "Created",
