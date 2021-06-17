@@ -3,15 +3,16 @@
 	<input class="menu-btn" type="checkbox" id="menu-btn" />
 	<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
 	<ul class="menu">
-		<li><a href="#Skills">Skills</a></li>
-		<li><a href="#Projects">Projects</a></li>
-		<li><a href="#Contact">Contact</a></li>
+		<li><a href="/#Skills">Skills</a></li>
+		<li><a href="/#Projects">Projects</a></li>
+		<li><a href="/#Contact">Contact</a></li>
 	</ul>
 </nav>
 
 <style>
-	/* nav */
-
+	a:hover {
+		-webkit-text-stroke-width: 0.5px;
+	}
 	nav {
 		background-color: rgb(61, 59, 59);
 		box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
