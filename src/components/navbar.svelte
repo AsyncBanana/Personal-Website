@@ -1,153 +1,61 @@
-<nav>
-	<a href="/" class="logo">AsyncBanana</a>
-	<input class="menu-btn" type="checkbox" id="menu-btn" />
-	<label class="menu-icon" for="menu-btn"><span class="navicon" /></label>
-	<ul class="menu">
-		<li><a href="/#Skills">Skills</a></li>
-		<li><a href="/#Projects">Projects</a></li>
-		<li><a href="/#Contact">Contact</a></li>
-	</ul>
-</nav>
+<div class="rounded-lg shadow bg-base-200 drawer">
+	<input id="toggle" type="checkbox" class="drawer-toggle" />
+	<div class="flex flex-col drawer-content" style="scroll-behavior: smooth;">
+		<div class="w-3/4 top-0 mt-3 rounded-box navbar bg-base-100 sticky m-auto z-30">
+			<div class="flex-1 px-2 mx-2">
+				<h1 class="font-extrabold text-xl">AsyncBanana</h1>
+			</div>
+			<div class="flex-none hidden lg:block">
+				<ul class="menu horizontal">
+					<li>
+						<a href="/#Skills">Skills</a>
+					</li>
+					<li>
+						<a href="/#Projects">Projects</a>
+					</li>
+					<li>
+						<a href="/#Contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="flex-none lg:hidden">
+				<label for="toggle" class="btn btn-square btn-ghost">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						class="inline-block w-6 h-6 stroke-current"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16"
+						/>
+					</svg>
+				</label>
+			</div>
+		</div>
+		<slot />
+	</div>
+	<div class="drawer-side">
+		<label for="toggle" class="drawer-overlay" />
+		<ul class="p-4 overflow-y-auto menu w-80 bg-base-100">
+			<li>
+				<a href="/#Skills">Skills</a>
+			</li>
+			<li>
+				<a href="/#Projects">Projects</a>
+			</li>
+			<li>
+				<a href="/#Contact">Contact</a>
+			</li>
+		</ul>
+	</div>
+</div>
 
-<style>
-	a:hover {
-		-webkit-text-stroke-width: 0.5px;
-	}
-	nav {
-		background-color: rgb(61, 59, 59);
-		box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
-		position: fixed;
-		width: 100%;
-		z-index: 3;
-		top: 0;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		overflow: hidden;
-		background-color: rgb(61, 59, 59);
-		display: flex;
-		flex-direction: column;
-	}
-
-	li a {
-		display: block;
-		padding: 20px 20px;
-		border-right: 1px solid rgb(61, 59, 59);
-		text-decoration: none;
-		margin: 2px;
-	}
-
-	li a:hover,
-	.menu-btn:hover {
-		background-color: rgb(61, 59, 59);
-	}
-	.logo {
-		display: block;
-		float: left;
-		font-size: 1.5rem;
-		padding: 10px 20px;
-		text-decoration: none;
-		font-weight: 700;
-		margin-top: auto;
-		margin-bottom: auto;
-	}
-
-	/* menu */
-
-	.menu {
-		clear: both;
-		max-height: 0;
-		transition: max-height 0.2s ease-out;
-	}
-
-	/* menu icon */
-
-	.menu-icon {
-		cursor: pointer;
-		display: inline-block;
-		float: right;
-		padding: 28px 20px;
-		position: relative;
-		user-select: none;
-	}
-
-	.menu-icon .navicon {
-		background: white;
-		display: block;
-		height: 2px;
-		position: relative;
-		transition: background 0.2s ease-out;
-		width: 18px;
-	}
-
-	.menu-icon .navicon:before,
-	.menu-icon .navicon:after {
-		background: white;
-		content: '';
-		display: block;
-		height: 100%;
-		position: absolute;
-		transition: all 0.2s ease-out;
-		width: 100%;
-	}
-
-	.menu-icon .navicon:before {
-		top: 5px;
-	}
-
-	.menu-icon .navicon:after {
-		top: -5px;
-	}
-
-	/* menu btn */
-
-	.menu-btn {
-		display: none;
-	}
-
-	.menu-btn:checked ~ .menu {
-		max-height: 240px;
-	}
-
-	.menu-btn:checked ~ .menu-icon .navicon {
-		background: transparent;
-	}
-
-	.menu-btn:checked ~ .menu-icon .navicon:before {
-		transform: rotate(-45deg);
-	}
-
-	.menu-btn:checked ~ .menu-icon .navicon:after {
-		transform: rotate(45deg);
-	}
-
-	.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-	.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-		top: 0;
-	}
-
-	/* 48em = 768px */
-
-	@media (min-width: 48em) {
-		li {
-			float: left;
-		}
-		li a {
-			padding: 20px 30px;
-		}
-		ul {
-			flex-direction: row;
-		}
-		.menu {
-			clear: none;
-			float: right;
-			max-height: none;
-		}
-		.menu-icon {
-			display: none;
-		}
+<style lang="postcss">
+	a {
+		@apply rounded-btn;
 	}
 </style>

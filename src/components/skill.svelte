@@ -1,5 +1,5 @@
 <script>
-    import 'balloon-css'
+    import 'balloon-css/balloon.min.css'
     export let imageUrl;
     export let name;
 </script>

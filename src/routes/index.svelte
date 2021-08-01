@@ -9,12 +9,10 @@
 	import cssLogo from '../assets/CSS_logo.svg';
 	import goLogo from '../assets/go_logo.png';
 	import tailwindLogo from '../assets/tailwind_logo.svg';
-	import materializeLogo from '../assets/materialize_logo.svg';
 	import typescriptLogo from '../assets/typescript_logo.svg';
 	import pythonLogo from '../assets/python_logo.svg';
 	import flutterLogo from '../assets/flutter_logo.svg';
 	import dartLogo from '../assets/dart_logo.svg';
-	import csharpLogo from '../assets/csharp_logo.svg';
 	import gitLogo from '../assets/git_logo.svg';
 	import linuxLogo from '../assets/linux_logo.svg';
 	import dockerLogo from '../assets/docker_logo.svg';
@@ -22,7 +20,6 @@
 	import gcpLogo from '../assets/gcp_logo.svg';
 	import nextjsLogo from '../assets/nextjs_logo.svg';
 	import gatsbyLogo from '../assets/gatsby_logo.svg';
-	import tensorflowLogo from '../assets/tensorflow_logo.svg';
 	import amplifyLogo from '../assets/amplify_logo.svg';
 	import firebaseLogo from '../assets/firebase_logo.svg';
 	import herokuLogo from '../assets/heroku_logo.svg';
@@ -30,7 +27,7 @@
 	import figmaLogo from '../assets/figma_logo.svg';
 	import nodejsLogo from '../assets/nodejs_logo.svg';
 	import rustLogo from '../assets/rust_logo.svg';
-	import mathgameslogo from '../assets/mathgames.png';
+	import AnimatedSection from '../components/animatedSection.svelte';
 </script>
 
 <div class="relative h-screen">
@@ -64,7 +61,9 @@
 	</p>
 	<p>I like Go, JavaScript, new, shiny frameworks, and bananas :)</p>
 	<p class="text-center">🚧This is currently in progress🚧</p>
-	<h1 class="text-center" id="Skills">Skills</h1>
+	<AnimatedSection>
+		<h1 slot="heading" class="text-center" id="Skills">Skills</h1>
+	</AnimatedSection>
 	<div class="grid md:grid-cols-6 lg:grid-cols-8 grid-cols-3 gap-5">
 		<Skill name="JavaScript" imageUrl={jsLogo} />
 		<Skill name="Node.js" imageUrl={nodejsLogo} />
@@ -76,10 +75,8 @@
 		<Skill name="CSS 3" imageUrl={cssLogo} />
 		<Skill name="Go" imageUrl={goLogo} />
 		<Skill name="Tailwind CSS" imageUrl={tailwindLogo} />
-		<Skill name="Materialize CSS" imageUrl={materializeLogo} />
 		<Skill name="Python" imageUrl={pythonLogo} />
 		<Skill name="TypeScript" imageUrl={typescriptLogo} />
-		<Skill name="C#" imageUrl={csharpLogo} />
 		<Skill name="Rust" imageUrl={rustLogo} />
 		<Skill name="Dart" imageUrl={dartLogo} />
 		<Skill name="Flutter" imageUrl={flutterLogo} />
@@ -91,17 +88,19 @@
 		<Skill name="AWS Amplify" imageUrl={amplifyLogo} />
 		<Skill name="Firebase" imageUrl={firebaseLogo} />
 		<Skill name="Heroku" imageUrl={herokuLogo} />
-		<Skill name="Tensorflow" imageUrl={tensorflowLogo} />
 		<Skill name="Redis" imageUrl={redisLogo} />
 		<Skill name="Figma" imageUrl={figmaLogo} />
 	</div>
-	<p>
-		*Note: This is only a subset of all of the libraries, languages, and frameworks that I have
-		knowledge of. Contact me for more info
-	</p>
-	<h1 class="text-center" id="Projects">Projects</h1>
+	<AnimatedSection>
+		<h1 slot="heading" class="text-center" id="Projects">Projects</h1>
+	</AnimatedSection>
+
 	<div class="grid lg:grid-cols-2">
-		<Project Name="This portfolio" Description="The porfolio website you are looking at right now" Url="Portfolio" />
+		<Project
+			Name="This portfolio"
+			Description="The porfolio website you are looking at right now"
+			Url="Portfolio"
+		/>
 		<Project
 			Name="Coin Flipper"
 			Description="A simple, fun Discord economy bot"
@@ -121,7 +120,7 @@
 			Name="Math Games"
 			Description="A popular, unique Roblox game to help practice math in a fun way"
 			Url="Math-Games"
-			ImageUrl={/*mathgameslogo*/""}
+			ImageUrl={/*mathgameslogo*/ ''}
 		/>
 		<Project
 			Name="Shouting Adventures"
