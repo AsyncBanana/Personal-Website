@@ -97,6 +97,16 @@
 
 	<div class="grid lg:grid-cols-2">
 		<Project
+			Name="Serenity Editor"
+			Description="The lightest editor you have ever seen"
+			Url="Serenity-Editor"
+		/>
+		<Project
+			Name="Medium Articles"
+			Description="Articles that I have written on Medium"
+			Url="Medium"
+		/>
+		<Project
 			Name="This portfolio"
 			Description="The porfolio website you are looking at right now"
 			Url="Portfolio"

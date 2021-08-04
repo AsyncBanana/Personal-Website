@@ -1,0 +1,19 @@
+{
+    "Name": "Serenity Editor",
+    "Description": "Serenity Editor is a minimalistic rich text editor available on the web and as a PWA. I am currently adding a cloud sync feature using Auth0, Cloudflare Workers, and Fauna. Serenity will soon be available on the Microsoft Store.",
+    "Url": "https://serenityeditor.com/Editor",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2021"
+        },
+        {
+            "Header": "Language",
+            "Value": "JavaScript"
+        },
+        {
+            "Header": "Framework",
+            "Value": "SvelteKit"
+        }
+    ]
+}
