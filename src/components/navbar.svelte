@@ -3,7 +3,7 @@
 	<div class="flex flex-col drawer-content" style="scroll-behavior: smooth;">
 		<div class="w-3/4 top-0 mt-3 rounded-box navbar bg-base-100 sticky m-auto z-30">
 			<div class="flex-1 px-2 mx-2">
-				<h1 class="font-extrabold text-xl">AsyncBanana</h1>
+				<a class="font-extrabold text-xl" href="/">AsyncBanana</a>
 			</div>
 			<div class="flex-none hidden lg:block">
 				<ul class="menu horizontal">
