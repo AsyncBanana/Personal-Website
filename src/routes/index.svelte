@@ -97,14 +97,19 @@
 
 	<div class="grid lg:grid-cols-2">
 		<Project
-			Name="Serenity Editor"
-			Description="The lightest editor you have ever seen"
-			Url="Serenity-Editor"
+			Name="Microdiff"
+			Description="The fastest object and array differ for JavaScript, with 2.5k+ stars on GitHub"
+			Url="Microdiff"
 		/>
 		<Project
 			Name="Medium Articles"
 			Description="Articles that I have written on Medium"
 			Url="Medium"
+		/>
+		<Project
+			Name="Serenity Editor"
+			Description="The lightest editor you have ever seen"
+			Url="Serenity-Editor"
 		/>
 		<Project
 			Name="This portfolio"

@@ -1,0 +1,19 @@
+{
+    "Name": "Microdiff",
+    "Description": "The fastest object and array differ for JavaScript",
+    "Url": "https://github.com/AsyncBanana/microdiff",
+    "Stats": [
+        {
+            "Header": "Created",
+            "Value": "2021"
+        },
+        {
+            "Header": "Language",
+            "Value": "JavaScript"
+        },
+        {
+            "Header": "Stars",
+            "Value": "2.5k+"
+        }
+    ]
+}
