@@ -58,9 +58,9 @@
 	<p>
 		&#8195;I am a developer that does web dev, desktop development, some mobile development, a bit
 		of data science, and more! I also write about programming stuff. This is my
-		portfolio/resume/personal website built with TypeScript, SvelteKit, and TailwindCSS
+		portfolio/resume/personal website built with TypeScript, SvelteKit, and TailwindCSS. I like Go,
+		JavaScript, new, shiny frameworks, and bananas :)
 	</p>
-	<p>I like Go, JavaScript, new, shiny frameworks, and bananas :)</p>
 	<p class="text-center">🚧This is currently in progress🚧</p>
 	<AnimatedSection>
 		<h1 slot="heading" class="text-center" id="Skills">Skills</h1>
