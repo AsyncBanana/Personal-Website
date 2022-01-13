@@ -2,6 +2,7 @@
 	import Project from '../components/project.svelte';
 	import Skill from '../components/skill.svelte';
 	import IconLink from '../components/iconLink.svelte';
+	import astroLogo from '../assets/astro_logo.svg';
 	import jsLogo from '../assets/js_logo.svg';
 	import reactLogo from '../assets/react_logo.svg';
 	import svelteLogo from '../assets/svelte_logo.svg';
@@ -65,6 +66,7 @@
 		<h1 slot="heading" class="text-center" id="Skills">Skills</h1>
 	</AnimatedSection>
 	<div class="grid md:grid-cols-6 lg:grid-cols-8 grid-cols-3 gap-5">
+		<Skill name="Astro" imageUrl={astroLogo} />
 		<Skill name="JavaScript" imageUrl={jsLogo} />
 		<Skill name="Node.js" imageUrl={nodejsLogo} />
 		<Skill name="React & React Native" imageUrl={reactLogo} />
@@ -96,6 +98,7 @@
 	</AnimatedSection>
 
 	<div class="grid lg:grid-cols-2">
+		<Project Name="ByteofDev" Description="Bite sized articles for developers" Url="ByteofDev" />
 		<Project
 			Name="Microdiff"
 			Description="The fastest object and array differ for JavaScript, with 2.5k+ stars on GitHub"
