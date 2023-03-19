@@ -1,0 +1,6 @@
+{
+  "windicss.enableEmmetCompletion": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
